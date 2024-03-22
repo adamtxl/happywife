@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+body {
+    background-color: teal;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/00/38/18/71/1000_F_38187109_AMnMpI7WcGs3WnT9xh1NcpWNqCIdOgAP.jpg")
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    font-size: large;
+    color: red;
+  }
