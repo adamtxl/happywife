@@ -36,4 +36,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  }
+  
+  #myButton {
+    display: block;
+    margin: 0 auto;
+}
