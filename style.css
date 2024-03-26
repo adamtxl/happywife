@@ -17,3 +17,9 @@ body {
     font-size: large;
     color: red;
   }
+
+  footer {
+    font-weight: bold;
+    font-size: xx-large;
+    color: blueviolet;
+  }
