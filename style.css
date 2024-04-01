@@ -49,8 +49,8 @@ p.centered {
 
 .carousel { 
   position: relative; 
-  width: 270px; 
-  height: 160px; 
+  width: 500px; 
+  height: 400px; 
   overflow: hidden; 
   background-color: #cdcdcd; 
 } 
