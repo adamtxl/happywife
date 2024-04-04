@@ -35,3 +35,7 @@ window.onload = function () {
     addActive(slides[nextIndex]);
   }, 3000); // Adjusted timing to match CSS transition timing
 };
+function removeActive(slide) {
+  console.log('Removing active class from slide:', slide);
+  slide.classList.remove('active');
+}
