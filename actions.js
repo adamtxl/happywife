@@ -1,13 +1,12 @@
 console.log('My wife is my heart');
 
-// Select the button
-const button = document.querySelector('button');
+var myButton = document.getElementById('myButton');
 
-// Add an event listener to the button
-button.addEventListener('click', function () {
+myButton.addEventListener('click', function () {
   // Display an alert when the button is clicked
   alert('I love you so much!');
 });
+
 /*});
 
 window.onload = function () {
