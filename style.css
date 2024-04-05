@@ -119,9 +119,9 @@ p.centered {
 }
 
 .prev-button {
-  left: 10px;
+  left: 1px;
 }
 
 .next-button {
-  right: 10px;
+  right: -100px;
 }
