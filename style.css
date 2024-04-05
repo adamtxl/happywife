@@ -1,6 +1,17 @@
 h1 {
   text-align: center;
   color: red;
+
+}
+.scrolling-text {
+  white-space: nowrap; /* Prevent the text from wrapping */
+  overflow: hidden; /* Hide any overflow */
+  animation: scrollText 10s linear infinite; /* Animation */
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); } /* Start off-screen to the right */
+  100% { transform: translateX(-100%); } /* Scroll to off-screen to the left */
 }
 body {
   background-color: teal;
@@ -47,6 +58,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 
 #myButton {
