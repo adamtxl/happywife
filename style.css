@@ -81,10 +81,10 @@ p.centered {
 }
 */
 
-carousel {
+.carousel {
   position: relative;
-  width: 100%;
-  overflow: hidden;
+  width: 25%; /* Adjust the width of the carousel as needed */
+  margin: 0 auto; /* Set left and right margins to auto */
 }
 
 .carousel-inner {
@@ -113,8 +113,8 @@ carousel {
   transform: translateY(-50%);
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
+  color: aqua;
+  border: solid black;
   cursor: pointer;
 }
 
