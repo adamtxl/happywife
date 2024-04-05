@@ -7,6 +7,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', function () {
   // Display an alert when the button is clicked
   alert('I love you so much!');
+});
 /*});
 
 window.onload = function () {
@@ -42,21 +43,35 @@ function removeActive(slide) {
 */
 
 window.onload = function() {
-  const carouselInner = document.querySelector('.carousel-inner');
   const carouselItems = document.querySelectorAll('.carousel-item');
   let currentIndex = 0;
 
+  // Show initial slide
+  showSlide(currentIndex);
+
+  // Function to show a specific slide
   function showSlide(index) {
-    carouselInner.style.transform = `translateX(-${index * 100}%)`;
+    // Hide all slides
     carouselItems.forEach(item => item.classList.remove('active'));
+    // Show the selected slide
     carouselItems[index].classList.add('active');
   }
 
+  // Function to show the next slide
   function nextSlide() {
     currentIndex = (currentIndex + 1) % carouselItems.length;
     showSlide(currentIndex);
   }
 
-  // Optionally, implement autoplay functionality
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  // Function to show the previous slide
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    showSlide(currentIndex);
+  }
+
+  // Add event listeners to navigation buttons
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  prevButton.addEventListener('click', prevSlide);
+  nextButton.addEventListener('click', nextSlide);
 };
