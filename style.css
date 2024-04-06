@@ -1,7 +1,6 @@
 h1 {
   text-align: center;
   color: red;
-
 }
 .scrolling-text {
   white-space: nowrap; /* Prevent the text from wrapping */
@@ -10,12 +9,17 @@ h1 {
 }
 
 @keyframes scrollText {
-  0% { transform: translateX(100%); } /* Start off-screen to the right */
-  100% { transform: translateX(-100%); } /* Scroll to off-screen to the left */
+  0% {
+    transform: translateX(100%);
+  } /* Start off-screen to the right */
+  100% {
+    transform: translateX(-100%);
+  } /* Scroll to off-screen to the left */
 }
 body {
   background-color: red;
   background-image: url('largepinkheart.gif');
+  /* create scrolling background */
 }
 
 .center {
@@ -126,10 +130,14 @@ p.centered {
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(135, 80, 80, 0.5);
   color: aqua;
   border: solid black;
-  cursor: pointer;
+  cursor: grab;
+  overflow: hidden;
+  position: absolute;
+  width: 35px; /* Adjust as needed */
+  height: 25px;
 }
 
 .prev-button {
@@ -139,3 +147,4 @@ p.centered {
 .next-button {
   right: -100px;
 }
+

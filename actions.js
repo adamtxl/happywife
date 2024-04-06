@@ -7,7 +7,7 @@ myButton.addEventListener('click', function () {
   alert('I love you so much!');
 });
 
-/*});
+/* });
 
 window.onload = function () {
   let slides = document.querySelectorAll('.carousel-item');
