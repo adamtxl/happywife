@@ -1,12 +1,13 @@
 console.log('My wife is my heart');
 
-var myButton = document.getElementById('myButton');
+if (window.location.pathname === '/index.html') {
+  var myButton = document.getElementById('myButton');
 
-myButton.addEventListener('click', function () {
-  // Display an alert when the button is clicked
-  alert('I love you so much!');
-});
-
+  myButton.addEventListener('click', function () {
+    // Display an alert when the button is clicked
+    alert('I love you so much!');
+  });
+}
 /* });
 
 window.onload = function () {
@@ -41,7 +42,7 @@ function removeActive(slide) {
 } 
 */
 
-window.onload = function() {
+window.onload = function () {
   const carouselItems = document.querySelectorAll('.carousel-item');
   let currentIndex = 0;
 
@@ -51,7 +52,7 @@ window.onload = function() {
   // Function to show a specific slide
   function showSlide(index) {
     // Hide all slides
-    carouselItems.forEach(item => item.classList.remove('active'));
+    carouselItems.forEach((item) => item.classList.remove('active'));
     // Show the selected slide
     carouselItems[index].classList.add('active');
   }
@@ -64,7 +65,8 @@ window.onload = function() {
 
   // Function to show the previous slide
   function prevSlide() {
-    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    currentIndex =
+      (currentIndex - 1 + carouselItems.length) % carouselItems.length;
     showSlide(currentIndex);
   }
 
