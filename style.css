@@ -14,7 +14,7 @@ h1 {
   100% { transform: translateX(-100%); } /* Scroll to off-screen to the left */
 }
 body {
-  background-color: teal;
+  background-color: red;
   background-image: url('largepinkheart.gif');
 }
 
@@ -58,7 +58,7 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+  text-align: center;
 }
 
 #myButton {
